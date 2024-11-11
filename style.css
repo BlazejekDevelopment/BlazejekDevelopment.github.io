@@ -1,0 +1,38 @@
+h1 {
+  font-size: 3em;
+  font-family: Comic Sans MS;
+  font-weight: 600;
+  font-style: italic;
+}
+
+ul {
+  font-size: 3em;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  transition: color 2s;
+  cursor: pointer;
+}
+
+li:hover {
+  color: hsl(0, 100%, 70%);
+}
+
+li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%) rotateZ(45deg);
+  top: 50%;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(0, 100%, 70%);
+  transition: background-color 2s;
+}
+
+li:hover::before {
+  background-color: black;
+}
