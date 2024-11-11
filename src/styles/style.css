@@ -6,46 +6,59 @@
 
 body {
   background-color: #161616;
+  position: relative;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photoImg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
 }
 
 .wrapper {
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
   padding-top: 40px;
-  height: 750px;
-  margin: 0px auto;
 }
 
 .nav {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav img {
-  width: 44px;
+  width: 45px;
 }
 .nav__button {
-  z-index: 1;
   padding: 17.5px 40px;
+  z-index: 1;
   border: none;
+  cursor: pointer;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 800;
   font-style: italic;
   background-color: #365fac;
   color: white;
+  transition: background-color 1s, border-radius 1s;
+}
+.nav__button:hover {
+  background-color: #4071cd;
+  border-radius: 10px;
 }
 
 .main {
   padding-top: 120px;
+  position: relative;
   color: white;
   display: flex;
-  height: 500px;
 }
 .main__left {
-  overflow: hidden;
   width: 50%;
 }
 .main__left h1 {
@@ -61,16 +74,6 @@ body {
   font-size: 23px;
   font-weight: 600;
   font-style: italic;
-}
-.main__right {
-  width: 50%;
-}
-.main__right img {
-  position: relative;
-  margin: 0px;
-  height: 106vh;
-  top: -250px;
-  right: 0px;
 }
 
 .content {
@@ -120,7 +123,13 @@ body {
   font-weight: 800;
   font-style: italic;
   background-color: #365fac;
+  cursor: pointer;
   color: white;
+  transition: background-color 1s, border-radius 1s;
+}
+.kontakt:hover {
+  background-color: #4071cd;
+  border-radius: 10px;
 }
 
 #Wave {
