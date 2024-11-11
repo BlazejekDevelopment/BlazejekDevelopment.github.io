@@ -102,12 +102,12 @@ body {
 }
 .content__right {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   width: 50%;
 }
 .content__right img {
-  width: 80%;
+  width: 85%;
   border-radius: 25px;
 }
 
