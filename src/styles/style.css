@@ -6,6 +6,7 @@
 
 body {
   background-color: #161616;
+  height: 200vh;
 }
 
 .wrapper {
@@ -25,6 +26,52 @@ body {
   width: 44px;
 }
 .nav__button {
+  z-index: 1;
+  padding: 17.5px 40px;
+  border: none;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+  background-color: #365fac;
+  color: white;
+}
+
+.main {
+  padding-top: 120px;
+  color: white;
+  display: flex;
+}
+.main__left {
+  overflow: hidden;
+  width: 50%;
+}
+.main__left h1 {
+  font-family: "Inter";
+  font-size: 64px;
+  font-weight: 800;
+  font-style: italic;
+}
+.main__left h2 {
+  width: 400px;
+  padding-top: 30px;
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: 600;
+  font-style: italic;
+}
+.main__right {
+  width: 50%;
+}
+.main__right img {
+  position: relative;
+  height: 100vh;
+  top: -250px;
+  right: 0px;
+}
+
+.kontakt {
+  margin-top: 40px;
   padding: 17.5px 40px;
   border: none;
   font-family: "Inter";

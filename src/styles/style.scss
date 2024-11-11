@@ -8,6 +8,7 @@
 
 body {
   background-color: $bg;
+  height: 200vh;
 }
 
 .wrapper {
@@ -28,6 +29,7 @@ body {
   }
 
   &__button {
+    z-index: 1;
     padding: 17.5px 40px;
     border: none;
     font-family: "Inter";
@@ -37,4 +39,54 @@ body {
     background-color: #365fac;
     color: white;
   }
+}
+
+.main {
+  padding-top: 120px;
+  color: white;
+  display: flex;
+
+  &__left {
+    overflow: hidden;
+    width: 50%;
+
+    h1 {
+      font-family: "Inter";
+      font-size: 64px;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    h2 {
+      width: 400px;
+      padding-top: 30px;
+      font-family: "Inter";
+      font-size: 23px;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    img {
+      position: relative;
+      height: 100vh;
+      top: -250px;
+      right: 0px;
+    }
+  }
+}
+
+.kontakt {
+  margin-top: 40px;
+  padding: 17.5px 40px;
+  border: none;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+  background-color: #365fac;
+  color: white;
 }
