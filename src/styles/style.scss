@@ -8,13 +8,14 @@
 
 body {
   background-color: $bg;
-  height: 200vh;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 100%;
   padding-top: 40px;
+  height: 750px;
   margin: 0px auto;
 }
 
@@ -45,6 +46,7 @@ body {
   padding-top: 120px;
   color: white;
   display: flex;
+  height: 500px;
 
   &__left {
     overflow: hidden;
@@ -72,9 +74,53 @@ body {
 
     img {
       position: relative;
-      height: 100vh;
+      margin: 0px;
+      height: 106vh;
       top: -250px;
       right: 0px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  background-color: #365fac;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px auto;
+
+  &__left {
+    width: 50%;
+
+    h1 {
+      font-family: "Inter";
+      font-size: 55px;
+      font-weight: 600;
+      font-style: italic;
+      color: white;
+    }
+
+    p {
+      padding-top: 60px;
+      font-family: "Inter";
+      font-size: 22px;
+      font-weight: 600;
+      font-style: italic;
+      color: white;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    img {
+      width: 80%;
+      border-radius: 25px;
     }
   }
 }
@@ -89,4 +135,15 @@ body {
   font-style: italic;
   background-color: #365fac;
   color: white;
+}
+
+#Wave {
+  position: relative;
+  width: 150%;
+  top: -100px;
+  left: -160px;
+}
+
+.wraperTwo {
+  background-color: #365fac;
 }
