@@ -25,11 +25,12 @@ li {
   cursor: pointer;
   padding: 0px 20px;
 }
-
 li:hover {
   color: hsl(0, 100%, 70%);
 }
-
+li:hover::before {
+  background-color: black;
+}
 li::before {
   content: "";
   display: block;
@@ -41,8 +42,4 @@ li::before {
   height: 10px;
   background-color: hsl(0, 100%, 70%);
   transition: background-color 2s;
-}
-
-li:hover::before {
-  background-color: black;
 }/*# sourceMappingURL=style.css.map */

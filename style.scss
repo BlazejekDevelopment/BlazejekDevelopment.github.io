@@ -1,5 +1,8 @@
+$bg: hsl(0, 0%, 30%);
+$bc: hsl(0, 100%, 70%);
+
 body {
-  background-color: hsl(0, 0%, 30%);
+  background-color: $bg;
 }
 
 h1 {
@@ -24,25 +27,25 @@ li {
   transition: color 2s;
   cursor: pointer;
   padding: 0px 20px;
-}
 
-li:hover {
-  color: hsl(0, 100%, 70%);
-}
+  &:hover {
+    color: $bc;
 
-li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  transform: translateY(-50%) rotateZ(45deg);
-  top: 50%;
-  left: -1px;
-  width: 10px;
-  height: 10px;
-  background-color: hsl(0, 100%, 70%);
-  transition: background-color 2s;
-}
+    &::before {
+      background-color: black;
+    }
+  }
 
-li:hover::before {
-  background-color: black;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(-50%) rotateZ(45deg);
+    top: 50%;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    background-color: $bc;
+    transition: background-color 2s;
+  }
 }
