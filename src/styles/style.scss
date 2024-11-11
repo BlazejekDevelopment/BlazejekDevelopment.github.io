@@ -8,18 +8,11 @@
 
 body {
   background-color: $bgb;
-  position: relative;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#photoImg {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 50%;
 }
 
 .wrapper {
@@ -28,10 +21,21 @@ body {
   padding-top: 40px;
 }
 
+.wrapperTwo {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 50px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px 50px;
+  border-radius: 25px;
 
   img {
     width: 45px;
@@ -62,6 +66,7 @@ body {
   position: relative;
   color: white;
   display: flex;
+  padding-bottom: 60px;
 
   &__left {
     width: 50%;
@@ -69,7 +74,7 @@ body {
     h1 {
       font-family: "Inter";
       font-size: 64px;
-      font-weight: 800;
+      font-weight: 900;
       font-style: italic;
     }
 
@@ -82,29 +87,57 @@ body {
       font-style: italic;
     }
   }
+
+  &__right {
+    width: 50%;
+    position: relative;
+  }
+}
+
+#photoImg {
+  position: absolute;
+  top: -170px;
+  right: 0px;
+  width: 110%;
+}
+
+#wave {
+  max-width: 1200px;
+  z-index: 5;
+  width: 100%;
+}
+
+#wave2 {
+  max-width: 1200px;
+  z-index: 5;
+  width: 100%;
 }
 
 .content {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $bgm;
-  max-width: 1200px;
-  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin: 0px auto;
 
   &__left {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1 {
       font-family: "Inter";
       font-size: 55px;
-      font-weight: 600;
+      font-weight: 900;
       font-style: italic;
       color: white;
     }
 
     p {
+      width: 520px;
       padding-top: 60px;
       font-family: "Inter";
       font-size: 22px;
@@ -116,13 +149,24 @@ body {
 
   &__right {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     width: 50%;
+    position: relative;
 
     img {
       width: 85%;
-      border-radius: 25px;
+      z-index: 3;
+    }
+
+    #borderImg {
+      position: absolute;
+      z-index: 2;
+      top: 45px;
+      right: 30px;
+      width: 85%;
+      height: 320px;
+      border: 2.5px solid white;
     }
   }
 }
@@ -145,15 +189,4 @@ body {
     background-color: $bgmh;
     border-radius: 10px;
   }
-}
-
-#Wave {
-  position: relative;
-  width: 150%;
-  top: -100px;
-  left: -160px;
-}
-
-.wraperTwo {
-  background-color: $bgm;
 }
