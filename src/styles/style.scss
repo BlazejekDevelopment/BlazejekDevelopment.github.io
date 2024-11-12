@@ -23,7 +23,7 @@ body {
 
 .wrapperTwo {
   width: 100%;
-  max-width: 1200px;
+  z-index: 4;
 }
 
 .nav {
@@ -79,12 +79,15 @@ body {
     }
 
     h2 {
-      width: 400px;
       padding-top: 30px;
       font-family: "Inter";
       font-size: 23px;
       font-weight: 600;
       font-style: italic;
+    }
+
+    .NonPading {
+      padding-top: 0px;
     }
   }
 
@@ -96,21 +99,23 @@ body {
 
 #photoImg {
   position: absolute;
-  top: -170px;
+  top: 0px;
   right: 0px;
-  width: 110%;
+  width: 50%;
 }
 
 #wave {
-  max-width: 1200px;
   z-index: 5;
   width: 100%;
+  position: relative;
+  top: 10px;
 }
 
 #wave2 {
-  max-width: 1200px;
+  position: relative;
   z-index: 5;
   width: 100%;
+  top: -10px;
 }
 
 .content {
@@ -158,16 +163,6 @@ body {
       width: 85%;
       z-index: 3;
     }
-
-    #borderImg {
-      position: absolute;
-      z-index: 2;
-      top: 45px;
-      right: 30px;
-      width: 85%;
-      height: 320px;
-      border: 2.5px solid white;
-    }
   }
 }
 
@@ -191,16 +186,103 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 1550px) {
+  .wrapperTwo {
+    max-width: 1200px;
+  }
+
+  #wave {
+    max-width: 1200px;
+  }
+
+  #wave2 {
+    max-width: 1200px;
+  }
+
+  #photoImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #photoImg {
+    top: -250px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .main__right {
+    display: none;
+  }
+
+  .main__left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 100px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .kontakt {
+      font-size: 28px;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #photoImg {
+    display: none;
+    top: -600px;
+    left: 0px;
+    height: 200%;
+  }
+
   .main__left {
     h1 {
-      font-size: 58px;
+      font-size: 80px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .kontakt {
+      font-size: 24px;
+      margin-top: 40px;
+    }
+  }
+
+  .content__left {
+    h1 {
+      font-size: 38px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+
+      padding-top: 25px;
+      font-size: 14px;
     }
   }
 }
 
 @media screen and (max-width: 800px) {
   .main__right {
+    display: none;
+  }
+
+  #photoImg {
     display: none;
   }
 
@@ -242,6 +324,91 @@ body {
     img {
       width: 80%;
       border-radius: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main__left {
+    h1 {
+      font-size: 58px;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main__left {
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 21px;
+      padding-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nav {
+    button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__left {
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .kontakt {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+  }
+
+  .content__left {
+    h1 {
+      font-size: 38px;
+    }
+
+    p {
+      padding-top: 25px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main__left {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    .kontakt {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+
+  .content__left {
+    h1 {
+      font-size: 38px;
+    }
+
+    p {
+      padding-top: 25px;
+      font-size: 14px;
     }
   }
 }
