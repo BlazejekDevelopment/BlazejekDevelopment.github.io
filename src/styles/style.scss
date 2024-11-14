@@ -9,6 +9,7 @@
 body {
   background-color: $bgbody;
   flex-direction: column;
+  overflow-x: hidden;
   display: flex;
 }
 
@@ -119,8 +120,8 @@ body {
 
 #firstWave {
   position: absolute;
-  width: 100%;
-  top: 37.5vw;
+  width: 105%;
+  top: 35vw;
 }
 
 .secondWrapper {
@@ -175,6 +176,6 @@ body {
 
 #secondWave {
   position: relative;
-  width: 100%;
+  width: 105%;
   top: -1vw;
 }
