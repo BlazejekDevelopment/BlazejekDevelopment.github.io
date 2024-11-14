@@ -120,7 +120,7 @@ body {
 #firstWave {
   position: absolute;
   width: 100%;
-  top: 35vw;
+  top: 37.5vw;
 }
 
 .secondWrapper {
@@ -174,5 +174,7 @@ body {
 }
 
 #secondWave {
+  position: relative;
   width: 100%;
+  top: -1vw;
 }
