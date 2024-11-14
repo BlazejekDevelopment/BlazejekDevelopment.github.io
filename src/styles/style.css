@@ -6,335 +6,151 @@
 
 body {
   background-color: #161616;
-  overflow-x: hidden;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  padding-top: 40px;
-}
-
-.wrapperTwo {
-  width: 100%;
-  z-index: 4;
-}
-
-.nav {
   display: flex;
-  align-items: center;
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 3vw;
+}
+.navigation .nestedNavigation {
   justify-content: space-between;
-  position: absolute;
-  top: 50px;
-  max-width: 1200px;
-  width: 100%;
-  padding: 10px 0px;
-  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  width: 80%;
 }
-.nav img {
-  width: 45px;
+.navigation .nestedNavigation__Logo {
+  height: 2.5vw;
 }
-.nav__button {
-  padding: 17.5px 40px;
-  z-index: 1;
-  border: none;
-  cursor: pointer;
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 800;
-  font-style: italic;
-  background-color: #365fac;
-  color: white;
+.navigation .nestedNavigation__Button {
   transition: background-color 1s, border-radius 1s;
-}
-.nav__button:hover {
-  background-color: #4071cd;
-  border-radius: 10px;
-}
-
-.main {
-  padding-top: 120px;
-  position: relative;
-  color: white;
-  display: flex;
-  padding-bottom: 60px;
-}
-.main__left {
-  width: 50%;
-}
-.main__left h1 {
-  font-family: "Inter";
-  font-size: 64px;
-  font-weight: 900;
-  font-style: italic;
-}
-.main__left h2 {
-  padding-top: 30px;
-  font-family: "Inter";
-  font-size: 23px;
-  font-weight: 600;
-  font-style: italic;
-}
-.main__left .NonPading {
-  padding-top: 0px;
-}
-.main__right {
-  width: 50%;
-  position: relative;
-}
-
-#photoImg {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 50%;
-}
-
-#wave {
-  z-index: 5;
-  width: 100%;
-  position: relative;
-  top: 10px;
-}
-
-#wave2 {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  top: -10px;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #365fac;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.content__left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content__left h1 {
   font-family: "Inter";
-  font-size: 55px;
+  font-style: italic;
   font-weight: 900;
-  font-style: italic;
+  padding: 1vw 3vw;
+  cursor: pointer;
+  font-size: 1vw;
   color: white;
+  border: none;
 }
-.content__left p {
-  width: 520px;
-  padding-top: 60px;
-  font-family: "Inter";
-  font-size: 22px;
-  font-weight: 600;
-  font-style: italic;
-  color: white;
+.navigation .nestedNavigation__Button:hover {
+  background-color: #4071cd;
+  border-radius: 0.75vw;
 }
-.content__right {
+
+.firstWrapper {
+  justify-content: right;
   display: flex;
+  width: 100%;
+}
+.firstWrapper .nestedWrapper {
+  display: flex;
+  width: 90%;
+}
+.firstWrapper .nestedWrapper__leftSide {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  width: 40%;
+}
+.firstWrapper .nestedWrapper__leftSide h1 {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 5vw;
+  color: white;
+}
+.firstWrapper .nestedWrapper__leftSide h2 {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 750;
+  font-size: 1.5vw;
+  color: white;
+}
+.firstWrapper .nestedWrapper__leftSide .linedHeader {
+  padding-top: 2vw;
+}
+.firstWrapper .nestedWrapper__leftSide a {
+  text-decoration: none;
+}
+.firstWrapper .nestedWrapper__leftSide a button {
+  transition: background-color 1s, border-radius 1s;
+  background-color: #365fac;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 900;
+  padding: 1vw 3vw;
+  margin-top: 4vw;
+  cursor: pointer;
+  font-size: 1vw;
+  color: white;
+  border: none;
+}
+.firstWrapper .nestedWrapper__leftSide a button:hover {
+  background-color: #4071cd;
+  border-radius: 0.75vw;
+}
+.firstWrapper .nestedWrapper__rightSide {
+  background-image: url("/src/images/Photo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+#firstWave {
+  position: absolute;
+  width: 100%;
+  top: 35vw;
+}
+
+.secondWrapper {
+  background-color: #365fac;
+  justify-content: center;
+  margin-top: 4vw;
+  display: flex;
+  width: 100%;
+}
+.secondWrapper .nestedWrapper {
+  padding-top: 6vw;
+  display: flex;
+  width: 100%;
+}
+.secondWrapper .nestedWrapper__space {
+  width: 10%;
+}
+.secondWrapper .nestedWrapper__leftSide {
+  width: 40%;
+}
+.secondWrapper .nestedWrapper__leftSide h1 {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 4vw;
+  color: white;
+}
+.secondWrapper .nestedWrapper__leftSide p {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 550;
+  padding-top: 2.5vw;
+  font-size: 1.7vw;
+  color: white;
+}
+.secondWrapper .nestedWrapper__rightSide {
   justify-content: center;
   align-items: center;
+  display: flex;
   width: 50%;
-  position: relative;
 }
-.content__right img {
+.secondWrapper .nestedWrapper__rightSide img {
   width: 85%;
-  z-index: 3;
 }
 
-.kontakt {
-  margin-top: 40px;
-  padding: 17.5px 40px;
-  border: none;
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 800;
-  font-style: italic;
-  background-color: #365fac;
-  cursor: pointer;
-  color: white;
-  transition: background-color 1s, border-radius 1s;
-}
-.kontakt:hover {
-  background-color: #4071cd;
-  border-radius: 10px;
-}
-
-@media screen and (min-width: 1550px) {
-  .wrapperTwo {
-    max-width: 1200px;
-  }
-  #wave {
-    max-width: 1200px;
-  }
-  #wave2 {
-    max-width: 1200px;
-  }
-  #photoImg {
-    display: none;
-  }
-}
-@media screen and (max-width: 1400px) {
-  #photoImg {
-    top: -250px;
-    left: 0px;
-    width: 100%;
-  }
-  .main__right {
-    display: none;
-  }
-  .main__left {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .main__left h1 {
-    font-size: 100px;
-  }
-  .main__left h2 {
-    font-size: 40px;
-  }
-  .main__left .kontakt {
-    font-size: 28px;
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 1150px) {
-  #photoImg {
-    display: none;
-    top: -600px;
-    left: 0px;
-    height: 200%;
-  }
-  .main__left h1 {
-    font-size: 80px;
-  }
-  .main__left h2 {
-    font-size: 30px;
-  }
-  .main__left .kontakt {
-    font-size: 24px;
-    margin-top: 40px;
-  }
-  .content__left h1 {
-    font-size: 38px;
-  }
-  .content__left p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding-top: 25px;
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .main__right {
-    display: none;
-  }
-  #photoImg {
-    display: none;
-  }
-  .main__left {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .content {
-    flex-direction: column;
-  }
-  .content__left {
-    width: 100%;
-  }
-  .content__left p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-  }
-  .content__right {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .content__right div {
-    display: none;
-  }
-  .content__right img {
-    width: 80%;
-    border-radius: 15px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .main__left h1 {
-    font-size: 58px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .main__left h1 {
-    font-size: 48px;
-  }
-  .main__left h2 {
-    font-size: 21px;
-    padding-top: 15px;
-  }
-}
-@media screen and (max-width: 430px) {
-  .nav button {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .main__left h1 {
-    font-size: 38px;
-  }
-  .main__left h2 {
-    font-size: 16px;
-  }
-  .main__left .kontakt {
-    padding: 12px 20px;
-    font-size: 12px;
-  }
-  .content__left h1 {
-    font-size: 38px;
-  }
-  .content__left p {
-    padding-top: 25px;
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 330px) {
-  .main__left h1 {
-    font-size: 30px;
-  }
-  .main__left h2 {
-    font-size: 14px;
-  }
-  .main__left .kontakt {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-  .content__left h1 {
-    font-size: 38px;
-  }
-  .content__left p {
-    padding-top: 25px;
-    font-size: 14px;
-  }
+#secondWave {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

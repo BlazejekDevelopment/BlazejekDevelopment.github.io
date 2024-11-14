@@ -3,42 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Błażejek Development</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
   </head>
   <body>
-    <div class="nav">
-      <img src="/src/images/Logo.svg" alt="Logo" class="nav__logo" />
-      <button class="nav__button">DOŁĄCZ NA DISCORD</button>
-    </div>
-
-    <img src="/src/images/Photo.svg" alt="" id="photoImg" />
-
-    <div class="wrapper">
-      <div class="main">
-        <div class="main__left">
-          <h1>BŁAŻEJEK</h1>
-          <h1>DEVELOPMENT</h1>
-          <h2>NAJLEPSZE ZDJĘCIA I STRONY</h2>
-          <h2 class="NonPading">INTERNETOWE NA CAŁYM ŚWIECIE</h2>
-          <button class="kontakt">SKONTAKTUJ SIĘ ZE MNĄ</button>
-        </div>
-        <div class="main__right"></div>
+    <div class="navigation">
+      <div class="nestedNavigation">
+        <img
+          src="/src/images/Logo.svg"
+          alt="Logo"
+          class="nestedNavigation__Logo"
+        />
+        <button class="nestedNavigation__Button">DOŁĄCZ NA DISCORD</button>
       </div>
     </div>
 
-    <img src="/src/images/Wave.svg" alt="" id="wave" />
+    <div class="firstWrapper">
+      <div class="nestedWrapper">
+        <div class="nestedWrapper__leftSide">
+          <h1>Błażejek</h1>
+          <h1>Development</h1>
 
-    <div class="wrapperTwo">
-      <div class="content">
-        <div class="content__left">
+          <h2 class="linedHeader">NAJLEPSZE ZDJĘCIA I STRONY</h2>
+          <h2>INTERNETOWE NA CAŁYM ŚWIECIE</h2>
+
+          <a href="mailto:nevix@tutamail.com" target="_blank">
+            <button>SKONTAKTUJ SIĘ ZE MNĄ</button>
+          </a>
+        </div>
+        <div class="nestedWrapper__rightSide"></div>
+      </div>
+    </div>
+
+    <img src="/src/images/Wave.svg" alt="Wave" id="firstWave" />
+
+    <div class="secondWrapper">
+      <div class="nestedWrapper">
+        <div class="nestedWrapper__space"></div>
+        <div class="nestedWrapper__leftSide">
           <h1>KIM JESTEM?</h1>
+
           <p>
             Mam na imię Błażej, choć niektórzy mówią na mnie Błażejek. Jestem
             młodą, ambitną osobą i lubię się rozwijać na różnych polach.
@@ -51,17 +58,15 @@
 
             To moje pasje, które pomagają mi odkrywać nowe możliwości i rozwijać
             się na wielu płaszczyznach. Jestem otwarty na nowe znajomości i
-            zawsze gotowy do działania.
+            zawsze gotowy do działania. <br /><br />
           </p>
         </div>
-        <div class="content__right">
+        <div class="nestedWrapper__rightSide">
           <img src="/src/images/Photo.jpg" alt="" />
         </div>
       </div>
     </div>
 
-    <img src="/src/images/wave 2.svg" alt="" id="wave2" />
-
-    <div class="wrapperThree"></div>
+    <img src="/src/images/wave 2.svg" alt="Wave" id="secondWave" />
   </body>
 </html>
