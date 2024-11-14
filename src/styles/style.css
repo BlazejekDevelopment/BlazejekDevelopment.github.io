@@ -104,17 +104,16 @@ body {
 }
 
 #firstWave {
-  transform: translateX(-50%);
-  position: absolute;
-  width: 115%;
-  left: 50%;
-  top: 35vw;
+  width: 105%;
+  position: relative;
+  top: 1vw;
 }
 
 .secondWrapper {
-  background-color: #365fac;
   justify-content: center;
-  margin-top: 4vw;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin-top: -8.5vw;
   display: flex;
   width: 100%;
 }
@@ -156,9 +155,7 @@ body {
 }
 
 #secondWave {
-  transform: translateX(-50%);
+  width: 105%;
   position: relative;
-  width: 115%;
-  left: 50%;
   top: -1vw;
 }/*# sourceMappingURL=style.css.map */
