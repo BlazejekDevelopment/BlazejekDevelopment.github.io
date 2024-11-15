@@ -102,11 +102,15 @@ body {
   width: 60%;
 }
 
+#firstWavePhone {
+  display: none;
+}
+
 #firstWave {
   position: relative;
   width: 110%;
   left: -5vw;
-  top: 1vw;
+  top: -2vw;
 }
 
 .secondWrapper {
@@ -119,6 +123,7 @@ body {
 }
 .secondWrapper .nestedWrapper {
   background-color: #365fac;
+  margin-top: -4vw;
   padding-top: 6vw;
   display: flex;
   width: 100%;
@@ -171,6 +176,9 @@ body {
   .navigation .nestedNavigation__Button {
     font-size: 2vw;
   }
+  .firstWrapper {
+    flex-direction: column;
+  }
   .firstWrapper .nestedWrapper {
     width: 100%;
   }
@@ -200,15 +208,22 @@ body {
   .firstWrapper .nestedWrapper__rightSide {
     display: none;
   }
+  #firstWavePhone {
+    display: block;
+    position: relative;
+    top: -12vw;
+  }
   #firstWave {
-    position: absolute;
-    z-index: 2;
-    top: 58.5vw;
+    display: none;
+  }
+  .secondWrapper {
+    margin-top: -12.5vw;
   }
   .secondWrapper .nestedWrapper {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 12vw;
   }
   .secondWrapper .nestedWrapper__space {
     display: none;
