@@ -9,7 +9,6 @@
 body {
   background-color: $bgbody;
   flex-direction: column;
-  overflow-x: hidden;
   display: flex;
 }
 
@@ -119,8 +118,10 @@ body {
 }
 
 #firstWave {
-  width: 105%;
+  transform: translateX(-52.5%);
   position: relative;
+  width: 110%;
+  left: 50%;
   top: 1vw;
 }
 
@@ -177,7 +178,9 @@ body {
 }
 
 #secondWave {
-  width: 105%;
+  transform: translateX(-52.5%);
   position: relative;
+  width: 110%;
+  left: 50%;
   top: -1vw;
 }
