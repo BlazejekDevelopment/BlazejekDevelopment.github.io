@@ -104,7 +104,8 @@ body {
 
 #firstWave {
   position: relative;
-  width: 100%;
+  width: 110%;
+  left: -5vw;
   top: 1vw;
 }
 
@@ -155,6 +156,7 @@ body {
 
 #secondWave {
   position: relative;
-  width: 100%;
+  width: 110%;
+  left: -5vw;
   top: -1vw;
 }/*# sourceMappingURL=style.css.map */
