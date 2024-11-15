@@ -118,10 +118,8 @@ body {
 }
 
 #firstWave {
-  transform: translateX(-55%);
   position: relative;
-  width: 115%;
-  left: 50%;
+  width: 100%;
   top: 1vw;
 }
 
@@ -178,9 +176,7 @@ body {
 }
 
 #secondWave {
-  transform: translateX(-52.5%);
   position: relative;
-  width: 110%;
-  left: 50%;
+  width: 100%;
   top: -1vw;
 }
