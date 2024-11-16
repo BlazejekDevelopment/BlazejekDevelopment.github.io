@@ -31,7 +31,7 @@ body {
 
     &__Button {
       transition: background-color 1s, border-radius 1s;
-      background-color: #365fac;
+      background-color: $bgbutton;
       font-family: "Inter";
       font-style: italic;
       font-weight: 900;
@@ -42,7 +42,7 @@ body {
       border: none;
 
       &:hover {
-        background-color: #4071cd;
+        background-color: $bgbuttonafter;
         border-radius: 0.75vw;
       }
     }
@@ -88,7 +88,7 @@ body {
 
         button {
           transition: background-color 1s, border-radius 1s;
-          background-color: #365fac;
+          background-color: $bgbutton;
           font-family: "Inter";
           font-style: italic;
           font-weight: 900;
@@ -100,7 +100,7 @@ body {
           border: none;
 
           &:hover {
-            background-color: #4071cd;
+            background-color: $bgbuttonafter;
             border-radius: 0.75vw;
           }
         }
@@ -137,7 +137,7 @@ body {
   width: 100%;
 
   .nestedWrapper {
-    background-color: #365fac;
+    background-color: $bgnestedwrapper;
     margin-top: -4vw;
     padding-top: 6vw;
     display: flex;
@@ -205,6 +205,8 @@ body {
 
   .firstWrapper {
     flex-direction: column;
+    overflow-x: hidden;
+
     .nestedWrapper {
       width: 100%;
 
@@ -244,9 +246,11 @@ body {
   }
 
   #firstWavePhone {
-    display: block;
     position: relative;
+    display: block;
+    width: 110%;
     top: -12vw;
+    left: -5vw;
   }
   #firstWave {
     display: none;
