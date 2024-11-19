@@ -102,11 +102,11 @@ body {
   width: 60%;
 }
 
-#firstWavePhone {
+.firstWavePhone {
   display: none;
 }
 
-#firstWave {
+.firstWave {
   position: relative;
   width: 110%;
   left: -5vw;
@@ -152,14 +152,24 @@ body {
 .secondWrapper .nestedWrapper__rightSide {
   justify-content: center;
   align-items: center;
+  position: relative;
   display: flex;
   width: 50%;
 }
 .secondWrapper .nestedWrapper__rightSide img {
   width: 85%;
+  z-index: 1;
+}
+.secondWrapper .nestedWrapper__rightSide .borderToImage {
+  border: 0.2vw solid white;
+  position: absolute;
+  height: 26.5vw;
+  right: 2vw;
+  width: 40vw;
+  top: 8vw;
 }
 
-#secondWave {
+.secondWave {
   position: relative;
   width: 110%;
   left: -5vw;
@@ -209,14 +219,14 @@ body {
   .firstWrapper .nestedWrapper__rightSide {
     display: none;
   }
-  #firstWavePhone {
+  .firstWavePhone {
     position: relative;
     display: block;
     width: 110%;
     top: -12vw;
     left: -5vw;
   }
-  #firstWave {
+  .firstWave {
     display: none;
   }
   .secondWrapper {
@@ -248,8 +258,11 @@ body {
     width: 100%;
   }
   .secondWrapper .nestedWrapper__rightSide img {
-    padding-top: 5vw;
     padding-bottom: 5vw;
+    padding-top: 5vw;
     width: 65%;
+  }
+  .secondWrapper .nestedWrapper__rightSide .borderToImage {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -117,11 +117,11 @@ body {
   }
 }
 
-#firstWavePhone {
+.firstWavePhone {
   display: none;
 }
 
-#firstWave {
+.firstWave {
   position: relative;
   width: 110%;
   left: -5vw;
@@ -171,17 +171,28 @@ body {
     &__rightSide {
       justify-content: center;
       align-items: center;
+      position: relative;
       display: flex;
       width: 50%;
 
       img {
         width: 85%;
+        z-index: 1;
+      }
+
+      .borderToImage {
+        border: 0.2vw solid white;
+        position: absolute;
+        height: 26.5vw;
+        right: 2vw;
+        width: 40vw;
+        top: 8vw;
       }
     }
   }
 }
 
-#secondWave {
+.secondWave {
   position: relative;
   width: 110%;
   left: -5vw;
@@ -245,14 +256,14 @@ body {
     }
   }
 
-  #firstWavePhone {
+  .firstWavePhone {
     position: relative;
     display: block;
     width: 110%;
     top: -12vw;
     left: -5vw;
   }
-  #firstWave {
+  .firstWave {
     display: none;
   }
 
@@ -289,9 +300,13 @@ body {
         width: 100%;
 
         img {
-          padding-top: 5vw;
           padding-bottom: 5vw;
+          padding-top: 5vw;
           width: 65%;
+        }
+
+        .borderToImage {
+          display: none;
         }
       }
     }
