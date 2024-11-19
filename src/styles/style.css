@@ -176,6 +176,26 @@ body {
   top: -1vw;
 }
 
+.footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.footer__nestedFooter {
+  padding: 3.5vw 0vw 3vw 0vw;
+  align-items: center;
+  display: flex;
+  width: 80%;
+}
+.footer__nestedFooter h1 {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 550;
+  font-size: 1vw;
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
   .navigation {
     top: 5vw;
@@ -264,5 +284,8 @@ body {
   }
   .secondWrapper .nestedWrapper__rightSide .borderToImage {
     display: none;
+  }
+  .footer__nestedFooter {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
