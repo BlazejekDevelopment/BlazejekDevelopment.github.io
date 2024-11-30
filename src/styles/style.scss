@@ -29,6 +29,11 @@ body {
       height: 2.5vw;
     }
 
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
     &__Button {
       transition: background-color 1s, border-radius 1s;
       background-color: $bgbutton;
@@ -337,6 +342,10 @@ body {
   .footer {
     &__nestedFooter {
       justify-content: center;
+
+      h1 {
+        font-size: 2vw;
+      }
     }
   }
 }
