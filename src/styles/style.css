@@ -205,10 +205,10 @@ body {
     top: 5vw;
   }
   .navigation .nestedNavigation__Logo {
-    height: 5vw;
+    height: 8vw;
   }
   .navigation .nestedNavigation__Button {
-    font-size: 2vw;
+    font-size: 4vw;
   }
   .firstWrapper {
     flex-direction: column;
@@ -224,21 +224,22 @@ body {
     justify-content: center;
     background-size: cover;
     flex-direction: column;
-    padding-bottom: 25vw;
+    padding-bottom: 22.5vw;
     align-items: center;
-    padding-top: 14vw;
+    padding-top: 24vw;
     display: flex;
     width: 100%;
   }
   .firstWrapper .nestedWrapper__leftSide h1 {
-    font-size: 10vw;
+    font-size: 13vw;
   }
   .firstWrapper .nestedWrapper__leftSide h2 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .firstWrapper .nestedWrapper__leftSide a button {
     padding: 1.5vw 4vw;
-    font-size: 2vw;
+    margin-top: 5vw;
+    font-size: 4vw;
   }
   .firstWrapper .nestedWrapper__rightSide {
     display: none;
@@ -247,14 +248,14 @@ body {
     position: relative;
     display: block;
     width: 110%;
-    top: -12vw;
+    top: -14vw;
     left: -5vw;
   }
   .firstWave {
     display: none;
   }
   .secondWrapper {
-    margin-top: -12.5vw;
+    margin-top: -14.5vw;
   }
   .secondWrapper .nestedWrapper {
     justify-content: center;
@@ -270,21 +271,23 @@ body {
     flex-direction: column;
     align-items: center;
     display: flex;
-    width: 65%;
+    width: 80%;
   }
   .secondWrapper .nestedWrapper__leftSide h1 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .secondWrapper .nestedWrapper__leftSide p {
-    font-size: 3vw;
+    text-align: center;
+    font-size: 4vw;
   }
   .secondWrapper .nestedWrapper__rightSide {
     width: 100%;
+    padding-bottom: 5vw;
   }
   .secondWrapper .nestedWrapper__rightSide img {
     padding-bottom: 5vw;
     padding-top: 5vw;
-    width: 65%;
+    width: 80%;
   }
   .secondWrapper .nestedWrapper__rightSide .borderToImage {
     display: none;
@@ -293,6 +296,6 @@ body {
     justify-content: center;
   }
   .footer__nestedFooter h1 {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }/*# sourceMappingURL=style.css.map */
